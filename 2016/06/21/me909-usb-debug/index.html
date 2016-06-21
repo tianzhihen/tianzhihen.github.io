@@ -70,13 +70,11 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="gateway,nodejs,geek" />
+  <meta name="keywords" content="嵌入式," />
 
 
 
 
-
-  <link rel="alternate" href="/atom.xml" title="MagicW's Home" type="application/atom+xml" />
 
 
 
@@ -88,15 +86,18 @@
 
 
 
-<meta name="description" content="Embedded Software Engineer">
-<meta property="og:type" content="website">
-<meta property="og:title" content="MagicW's Home">
-<meta property="og:url" content="http://tianzhihen.github.io/tags/ww/index.html">
+<meta name="description" content="概述还没有找到stm32 与 华为通信模块通过USB通信的例子，本贴直播调试usb host的全过程，如果有搞过的请跟帖帮忙分析一下。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="me909 usb debug">
+<meta property="og:url" content="http://tianzhihen.github.io/2016/06/21/me909-usb-debug/index.html">
 <meta property="og:site_name" content="MagicW's Home">
-<meta property="og:description" content="Embedded Software Engineer">
+<meta property="og:description" content="概述还没有找到stm32 与 华为通信模块通过USB通信的例子，本贴直播调试usb host的全过程，如果有搞过的请跟帖帮忙分析一下。">
+<meta property="og:image" content="http://img.blog.csdn.net/20160309161410977">
+<meta property="og:updated_time" content="2016-06-21T13:28:16.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MagicW's Home">
-<meta name="twitter:description" content="Embedded Software Engineer">
+<meta name="twitter:title" content="me909 usb debug">
+<meta name="twitter:description" content="概述还没有找到stm32 与 华为通信模块通过USB通信的例子，本贴直播调试usb host的全过程，如果有搞过的请跟帖帮忙分析一下。">
+<meta name="twitter:image" content="http://img.blog.csdn.net/20160309161410977">
 
 
 
@@ -125,7 +126,7 @@
 
 
 
-  <title> Tag: ww | MagicW's Home </title>
+  <title> me909 usb debug | MagicW's Home </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -146,7 +147,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -257,53 +258,208 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2 >
-        ww
-        <small>Tag</small>
-      </h2>
-    </div>
-
+  <div id="posts" class="posts-expand">
     
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/06/21/ttest/" itemprop="url">
-              
-                <span itemprop="name">ttest</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-06-21T19:34:21+08:00"
-              content="2016-06-21" >
-          06-21
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-  </div>
 
   
 
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                me909 usb debug
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2016-06-21T21:23:31+08:00" content="2016-06-21">
+              2016-06-21
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/06/21/me909-usb-debug/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/06/21/me909-usb-debug/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+              &nbsp; | &nbsp;
+              <span class="page-pv"><i class="fa fa-file-o"></i>
+              <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+              </span>
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>还没有找到stm32 与 华为通信模块通过USB通信的例子，本贴直播调试usb host的全过程，如果有搞过的请跟帖帮忙分析一下。</p>
+<a id="more"></a>
+<h2 id="已经知道的东西"><a href="#已经知道的东西" class="headerlink" title="已经知道的东西"></a>已经知道的东西</h2><p>1.华为me909 usb属于usb device，是cdc类。<br>2.stm32F4具备usb host功能，可以使用官方提供的usb库进行设计，最新的usb库为2.2.0版本。</p>
+<p>3.移植了usb hid的例子，stm32F4作为host 与鼠标进行通信，完成。使用的是PA11 和 PA12脚，FS（全速模式）。</p>
+<p>4.华为me909为自供电usb设备，因此当usb出现故障的时候不能通过插拔usb接口对usb进行复位，好在me909有复位引脚，经测试，通过模块本身的复位引脚对模块进行复位后，usb可以重新与stm32建立连接，相当于重新插拔USB接头。对于后期调试准备了下下策。</p>
+<h2 id="正在进行的工作"><a href="#正在进行的工作" class="headerlink" title="正在进行的工作"></a>正在进行的工作</h2><p>2016/3/9/17:43之前<br>移植了官方usb host CDC的例子，结合原子提供的hid的例程进行调试，未果，只能进行到“USBH_USR_DeviceAddressAssigned（从机分配地址成功）“这一步，后续还没进展。现在怎么突破枚举的问题正在开展，阅读源码是必要的。</p>
+<p>截止至2016/3/9/17:43<br>设备已经枚举成功，终于迈出了第一步，调试过程：跟踪调试，发现程序在 usbh_stdreq.c 第479行时if ( cfg_desc-&gt;bNumInterfaces &lt;= USBH_MAX_NUM_INTERFACES)  解析描述信息后会检查接口数是否在设定的范围内，华为的接口数为6个大于在 usbh_conf.h设置的例程中的 2个接口，所以枚举失败。改为6后，并把最对endpoint（端点数） 设置为3（在华为的 USB Interface Descriptor Guide文件中说明）。枚举成功！<br>但是提示的是不支持的设备，正在进一步调试，趁热打铁！ </p>
+<p>截止至2016/3/9/18:03<br>打印出各个接口的信息<br>bInterfaceClass: 00FFh,bInterfaceSubClass: 0006h,bInterfaceProtocol: 0010h<br>bInterfaceClass: 00FFh,bInterfaceSubClass: 0006h,bInterfaceProtocol: 0013h<br>bInterfaceClass: 00FFh,bInterfaceSubClass: 0006h,bInterfaceProtocol: 0012h<br>bInterfaceClass: 00FFh,bInterfaceSubClass: 0006h,bInterfaceProtocol: 0016h<br>bInterfaceClass: 00FFh,bInterfaceSubClass: 0006h,bInterfaceProtocol: 0006h<br>bInterfaceClass: 00FFh,bInterfaceSubClass: 0006h,bInterfaceProtocol: 001Bh<br>跟手册完全一致  ^-^</p>
+<p>截止至2016/3/11/12:03<br>将端点 按照华为模块手册说明进行设置。有时可以接收到数据，但是概率很低，调试时发现在<br>CDC_ProcessReception(USB_OTG_CORE_HANDLE <em>pdev, USBH_HOST </em>phost)  函数中<br>URB_STATE URB_StatusRx =   HCD_GetURB_State(pdev , CDC_Machine.CDC_DataItf.hc_num_in);时</p>
+<p>URB_StatusRx  的值为 URB_ERROR</p>
+<p>查找发生这个错误的原因 在一个中断处理函数中<br>    else if((pdev-&gt;host.HC_Status[num] == HC_XACTERR) ||<br>            (pdev-&gt;host.HC_Status[num] == HC_DATATGLERR))<br>    {<br>      pdev-&gt;host.ErrCnt[num] = 0;<br>      pdev-&gt;host.URB_State[num] = URB_ERROR;<br>    }</p>
+<p>引用香水城的描述<br>同样查看XACTERR和DATAEGLERR的置位原因，找到对应的寄存器，即OTG_FS_HCINTx中的【TXERR】和【DTERR】位被硬件置</p>
+<blockquote>
+<p>【TXERR】：Transaction error，可能是CRC校验错误、超时、比特填充错误、或者错误的EOP<br>【DTERR】：Data toggle error，表示收、发双方的数据同步位不再同步，可能是主机处理不当，也有可能是设备处理不当。最直观的方法是使用USB分析仪，看出错前的总线通信来判断是谁没有正确处理数据同步位的翻转。</p>
+</blockquote>
+<p>截止至2016/3/11 15:24确定为XACTERR错误，等待进一步调试</p>
+<p>截止至2016/3/14<br>结帖：因为根据调试信息看是硬件问题，所以买了一个带usbhost接口的开发板进行调试。今天板子刚到。。。<br>烧程序，测试成功！果然是硬件问题！！！ 问题解决。</p>
+<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>keil 在编译完出线这个警告，没有找到是什么问题，但是结果是 0错误 0警告。有知道什么问题的请回复下。</p>
+<p><img src="http://img.blog.csdn.net/20160309161410977" alt="这里写图片描述"></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/嵌入式/" rel="tag"># 嵌入式</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/06/21/hello-world/" rel="prev" title="hexo 创建与主题修改(基于next)">
+                hexo 创建与主题修改(基于next) <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "16",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
+<span class="post-count">0</span>
+<span class="post-count">0</span>
+<span class="post-count">2.0k</span>
 
           </div>
           
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/06/21/me909-usb-debug/"
+           data-title="me909 usb debug" data-url="http://tianzhihen.github.io/2016/06/21/me909-usb-debug/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -323,8 +479,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="http://7xnhyf.com1.z0.glb.clouddn.com/geekblog.png"
@@ -353,13 +518,6 @@
 
         </nav>
 
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
-          </div>
         
 
         <div class="links-of-author motion-element">
@@ -426,6 +584,20 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#概述"><span class="nav-number">1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#已经知道的东西"><span class="nav-number">2.</span> <span class="nav-text">已经知道的东西</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#正在进行的工作"><span class="nav-number">3.</span> <span class="nav-text">正在进行的工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#问题"><span class="nav-number">4.</span> <span class="nav-text">问题</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
       
 
     </div>
@@ -542,6 +714,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
 
   
 
