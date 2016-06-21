@@ -1,0 +1,3 @@
+[submodule "magicblog/themes/my_hexo_theme"]
+	path = magicblog/themes/my_hexo_theme
+	url = git@github.com:tianzhihen/my_hexo_theme.git

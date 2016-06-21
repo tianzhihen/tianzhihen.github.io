@@ -65,7 +65,7 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 
 
-theme: next
+theme: my_hexo_theme
 
 feed:
   type: atom ##feed 类型 (atom/rss2)
